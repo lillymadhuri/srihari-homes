@@ -4,8 +4,9 @@
 }
 
 .navbar{ 
+  overflow: visible; 
   position: relative;
-  z-index: 5; 
+  z-index: 1000; 
   background-color: #002233;
   position: fixed;
 height: 70px;
@@ -17,7 +18,8 @@ padding: 10px 10px;
 }
 .navlinks{
  display: flex;
-margin-right: 100px;
+margin-left: 50px;
+margin-top: 50px;
 flex-direction: row;
 gap: 50px;  
 font-size: 20px;
@@ -91,5 +93,77 @@ font-size: 20px;
 /* Hover effect */
 .dropdown-menu li:hover {
   background: #f2f2f2;       /* light grey on hover */
+}
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    height: auto;
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  .logoimg {
+    margin-left: 0;
+    margin-top: 0;
+    height: 50px;
+  }
+
+  /* Stack menu vertically */
+  .navlinks {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #002233;
+    padding: 20px 0;
+    gap: 20px;
+    margin: 0;
+    display: none;   /* hidden by default */
+    text-align: center;
+  }
+
+  /* Show nav when active class added */
+  .navlinks.active {
+    display: flex;
+  }
+
+  .navlinks li a {
+    font-size: 18px;
+  }
+
+  /* Hide phone button from top bar */
+  .button-container {
+    display: none;
+  }
+
+  /* Dropdown fix for mobile */
+  .dropdown-menu {
+    position: relative;
+    background: #ffffff;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: #c09716;
+  margin-left: auto;
+  cursor: pointer;
+  top: -10px; /* adjust as needed */
+    right: 20px; 
+  
+}
+
+/* Show hamburger only in mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+     position: relative; 
+  z-index: 1000; 
+  cursor: pointer;
+  }
 }
 

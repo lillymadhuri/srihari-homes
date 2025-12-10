@@ -6,17 +6,20 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showResources, setShowResources] = useState(false);
-
-    const handlehireClick = () => {
+   const [mobileOpen, setMobileOpen] = useState(false);
+   const handlehireClick = () => {
     document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' })
-   }
+    }
   return (
     <nav className="navbar">
         <div className="logo">
          <img src={sri1} alt="Logo" className="logoimg" />
-         </div>
-        <ul className="navlinks">
-           <li><Link to="/home">Home</Link></li>
+        </div>
+          <div className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
+        ☰
+      </div>
+        <ul className={`navlinks ${mobileOpen ? "active" : ""}`}>
+        <li><Link to="/home">Home</Link></li>
           <li><Link to="/about">About</Link></li>
             <li><Link to="/project">Project</Link></li>
             <li><Link to="/nri">NRI</Link></li>
@@ -24,7 +27,8 @@ function Navbar() {
            <li className="resources-menu"
   onMouseEnter={() => setShowResources(true)}
   onMouseLeave={() => setShowResources(false)}
->
+  >
+
  Resources▼
   {showResources && (
     <ul className="dropdown-menu">

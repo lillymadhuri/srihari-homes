@@ -74,3 +74,55 @@
 .media-coverage-card img:hover {
   transform: scale(1.07);
 }
+/* ================================
+   📱 MOBILE RESPONSIVE (max-width: 768px)
+================================ */
+@media (max-width: 768px) {
+
+  /* HERO SECTION */
+  .media-hero {
+    height: 40vh; /* reduce height for mobile */
+  }
+
+  .media-hero-text h1 {
+    font-size: 32px;
+  }
+
+  /* MEDIA COVERAGE SECTION */
+  .media-coverage-section {
+    padding: 30px 20px;
+  }
+
+  .media-coverage-section h2,
+  .media-coverage-section span {
+    font-size: 32px;
+  }
+
+  /* 1 IMAGE PER ROW ON MOBILE */
+  .media-coverage-grid {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .media-coverage-card img {
+    height: 250px;
+    border-radius: 12px;
+  }
+}
+
+
+/* ================================
+   📱 TABLET RESPONSIVE (max-width: 1024px)
+================================ */
+@media (max-width: 1024px) {
+
+  .media-coverage-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 20px;
+  }
+
+  .media-coverage-card img {
+    height: 220px;
+  }
+}
+

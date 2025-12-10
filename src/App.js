@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import ScrollToTop from "./ScrollToTop";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -18,7 +19,8 @@ import Media from "./components/Resources/Media";
 function App() {
   return (
     <Router>
-      <Navbar />
+      <ScrollToTop />
+       <Navbar />
       <Routes>
         {/* Default home route */}
         <Route path="/" element={<Home />} />

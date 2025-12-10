@@ -5,17 +5,13 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 function Contact() {
   return (
-    <div className="contact-page"> {/* ✅ main wrapper */}
-
-      {/* Hero Section */}
+    <div className="contact-page">
       <div className="contact-hero">
         <img src={sri21} alt="Contact Us" className="contact-hero-img" />
         <div className="contact-hero-text">
           <h1>Contact Us</h1>
         </div>
       </div>
-
-      {/* Contact Info + Form Section */}
       <div className="contact-container">
         <div className="contact-info">
           <h2>
@@ -51,7 +47,7 @@ function Contact() {
 
             <div className="contact-item">
                <FaPhoneAlt className="contact-icon" />
-              <h3>MOBILE</h3>
+              
               <p>
                  <h3>MOBILE</h3>
                  +91 70325 99541</p>

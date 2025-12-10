@@ -7,6 +7,91 @@
   padding-bottom:50%; 
 }
 
+@media (max-width: 900px) {
+  .whybuy-section.reverse {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .nri-hero {
+    height: 70vh;
+  }
+
+  .nri-hero-title {
+    font-size: 30px;
+  }
+
+  .nri-hero-subtext {
+    font-size: 18px;
+  }
+
+  .nri-hero-content {
+    width: 100%;
+  }
+
+  .whybuy-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .whybuy-image {
+    justify-content: center;
+  }
+
+  .whybuy-image img {
+    max-width: 100%;
+  }
+}
+
+/* ===== PROJECTS SECTION ===== */
+.projects-section {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.project-card {
+  width: 250px;
+  padding: 15px;
+}
+
+.project-img {
+  width: 100%;
+  height: 90%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-location,
+.project-bhk {
+  font-size: 15px;
+  color: #555;
+}
+
+.project-enquire {
+  background-color: #0c1b23;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project-enquire:hover {
+  background-color: #1e3a5f;
+}
 .nri-hero-img {
   width: 100%;
   height: 100%;
@@ -159,12 +244,11 @@
 
 /* Style each project card */
 .project-card {
-  
   background: transparent;
  border-radius: 20px;
   box-shadow:none;
-  width: 100px; /* adjust width as you like */
-  padding: 20px;
+  width: 250px; /* adjust width as you like */
+  padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -175,12 +259,12 @@
 
 .project-img {
   background: transparent;
-  width: 200%;
+  width: 100%;
   height: 90%;
   border-radius: 8px;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
+ 
 }
 
 .project-name {

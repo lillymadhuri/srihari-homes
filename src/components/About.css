@@ -335,7 +335,7 @@
   padding: 20px 20px;
   box-sizing: border-box;
   text-align: center;
-  height: 700px; 
+  height: auto; 
 }
 .about-blue-section .about-heading {
   color: #f5d27d;
@@ -361,10 +361,9 @@
    padding-right:  10%;
 }
 .about-card1 {
-   max-height: fit-content;
+   height: 70px;
   border-radius: 20px;
-   width: 200px;
-   background-color: #0c1b23;
+   width: 220px;
   color: white;
    padding: 10px 10px;
   text-align: center;
@@ -391,7 +390,6 @@
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
-  border: 3px solid white;
 }
 
 /* Card title */
@@ -411,3 +409,28 @@ font-size: 15px; }
 color :#0c1b23; 
 text-align: center; 
 font-size: 15px; }
+@media (max-width: 768px) {
+  .about h1,
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-content {
+    padding: 40px 20px;
+  }
+
+  .strengths-title {
+    font-size: 32px;
+  }
+
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card1,
+  .about-card2 {
+    max-width: 90%;
+  }
+}
+

@@ -26,16 +26,17 @@ font-family: "Cinzel Decorative", "Playfair Display", serif;
   
 }
 .project-card {
+  
   border-radius: 20px;
-   width: 250px;       
+   width: 100%;      
   height: 270px;       
  background-color:white;
-   margin-left: 100px; 
+   margin-left: 120px; 
   text-align: center;
+  justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 30px 25px;
   color: #0b1d2d;
-   margin-top:120px;
+   margin-top:100px;
 
 }
 
@@ -51,31 +52,31 @@ font-family: "Cinzel Decorative", "Playfair Display", serif;
   object-fit: cover;
 }
 
-.project-title {
+.project-title1 {
   font-size: 22px;
   color: #ffd700;
   margin-top: 15px;
 }
 
-.project-location {
+.project-location1 {
+  font-weight: 20px;
   color: #ffd700;
-  font-size: 16px;
-  margin: 25px ;
+  font-size: 22px;
+  margin-top: 25px ;
 }
 
-.project-status {
+.project-status1 {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 10px;
   border-radius: 8px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Status Colors */
 .ongoing {
-  
-  background-color: #ffd700;
+   background-color: #ffd700;
 }
 
 .upcoming {
@@ -92,7 +93,7 @@ font-family: "Cinzel Decorative", "Playfair Display", serif;
   margin-left: 15px;
   margin-top: 10px;
   padding: 10px 10px;
-  background-color:  #ffd966;
+  background-color: #ffd700;
   color:black;
   border: none;
   border-radius: 8px;
@@ -111,10 +112,9 @@ font-family: "Cinzel Decorative", "Playfair Display", serif;
   
 }
 .project-hero-img {
-  
-  margin-top: 150px;
+  margin-top: 180px;
   width: 100%;
-  height: 100%;
+  height: 120%;
   object-fit: cover;   /* Makes image fit screen */
   filter: brightness(85%); /* Darken for text visibility */
 }
@@ -244,6 +244,92 @@ font-family: "Cinzel Decorative", "Playfair Display", serif;
   font-size: 14px;
   opacity: 0.9;
 }
+/* -------------------- MOBILE VIEW FIX -------------------- */
+@media (max-width: 768px) {
+
+  .project {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    height: auto; /* remove 100vh problem */
+  }
+
+  .project h1 {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    margin-left: 0;     /* FIX SHIFT */
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .project-img {
+    height: 180px; /* bigger image for mobile */
+    object-fit: cover;
+  }
+
+  /* Fix Hero Image under Projects */
+  .project-hero {
+    height: 45vh;
+    margin-top: 30px;
+  }
+
+  .project-hero-img {
+    margin-top: 0;
+    height: 100%;
+  }
+
+  .project-hero-text h1 {
+    font-size: 26px;
+  }
+
+  .project-hero-text p {
+    font-size: 14px;
+  }
+
+  /* Features Section */
+  .features-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .feature-box {
+    width: 100%;
+  }
+
+  /* Cities grid mobile fix */
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 15px;
+  }
+
+  .city-card {
+    height: 160px;
+  }
+
+  .city-overlay h3 {
+    font-size: 16px;
+  }
+
+  .city-overlay p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .project-card img {
+    height: 230px;     /* little smaller for phones */
+  }
+}
+
 
 
 

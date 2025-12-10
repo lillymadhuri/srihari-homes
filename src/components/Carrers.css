@@ -69,7 +69,8 @@
 /* Inputs */
 .form-group input,
 .form-group textarea {
-   width: 55%; 
+  box-sizing: border-box;
+   width: 100%; 
    padding: 10px;
   border: 1px solid #ccc;
   font-size: 15px;
@@ -226,3 +227,203 @@
 .career-exp{
 
 color: #333;}
+/* ================================ */
+/*         MOBILE VIEW              */
+/* ================================ */
+@media (max-width: 768px) {
+
+  /* HERO IMAGE */
+  .careers-hero {
+    height: 50vh;
+  }
+
+  .careers-hero-text h1 {
+    font-size: 32px;
+  }
+
+  /* FORM BOX */
+  .career-form-section {
+    width: 90%;
+    margin: -40px auto 20px auto;
+    padding: 25px;
+  }
+
+  .career-form {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group input {
+    width: 100% !important;
+  }
+
+  .resume-input-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .file-input {
+    width: 100%;
+  }
+
+  .apply-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* CAREER INFO SECTION */
+  .career-info-section {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .career-info-left,
+  .career-info-right {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .careers-title,
+  .career-title-gold {
+    font-size: 40px;
+  }
+
+  .career-subtitle {
+    font-size: 18px;
+  }
+
+  /* CAREER CARDS */
+  .career-row {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .career-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .career-title {
+    font-size: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .career-job-desc,
+  .career-type,
+  .career-exp {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .career-form-section {
+    width: 90%;
+    margin: -40px auto 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .career-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100% !important;
+  }
+
+  .resume-input-box {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .file-input,
+  .apply-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+
+  .career-form-section {
+    width: 90%;
+    margin: -40px auto 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .career-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100% !important;
+  }
+
+  .resume-input-box {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .file-input,
+  .apply-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+
+  .career-form-section {
+    width: 90%;
+    margin: -40px auto 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .career-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100% !important;
+  }
+
+  .resume-input-box {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .file-input,
+  .apply-btn {
+    width: 100%;
+  }
+}

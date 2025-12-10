@@ -130,3 +130,85 @@
 .wip-video-grid video:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 992px) {
+  .gallery-hero {
+    height: 480px;
+  }
+
+  .gallery-hero-text h1 {
+    font-size: 50px;
+  }
+
+  .gallery-heading,
+  .gallery-heading1 {
+    font-size: 50px;
+  }
+
+  .gallery-grid,
+  .gallery-grid1,
+  .wip-video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ================================================================== */
+/* ========================  MOBILE VIEW  =========================== */
+/* ================================================================== */
+
+@media (max-width: 768px) {
+  .gallery-hero {
+    height: 350px;
+  }
+
+  .gallery-hero-text h1 {
+    font-size: 36px;
+  }
+
+  .gallery-heading,
+  .gallery-heading1 {
+    font-size: 36px;
+  }
+
+  .gallery-section,
+  .gallery-section1 {
+    padding: 40px 6%;
+  }
+
+  .gallery-grid,
+  .gallery-grid1,
+  .wip-video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================================================================== */
+/* ====================== SMALL PHONE VIEW =========================== */
+/* ================================================================== */
+
+@media (max-width: 480px) {
+  .gallery-hero {
+    height: 280px;
+  }
+
+  .gallery-hero-text h1 {
+    font-size: 28px;
+  }
+
+  .gallery-heading,
+  .gallery-heading1 {
+    font-size: 28px;
+  }
+
+  .gallery-grid,
+  .gallery-grid1,
+  .wip-video-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-grid img,
+  .gallery-grid1 img,
+  .wip-video-grid video {
+    height: 250px;
+  }
+}

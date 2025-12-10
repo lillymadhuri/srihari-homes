@@ -7,10 +7,6 @@ import sri13 from "../images/sri13.jpeg";
 import sri14 from "../images/sri14.jpeg";
 import sri15 from "../images/sri15.jpeg";
 import sri16 from "../images/sri16.jpeg";
-
-
-
-
 function Nri() {
    const projects = [
     {

@@ -186,3 +186,31 @@ button:hover {
   height: 100%;
   border: 0;
 }
+/* ===========================
+   📱 MOBILE VIEW FIX (Max 768px)
+   =========================== */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px 15px; /* left and right padding */
+    gap: 30px;
+  }
+
+  .contact-info, .contact-form {
+    width: 100%;
+    box-sizing: border-box; /* include padding in width */
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form-row input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box; /* ensures input doesn't overflow */
+  }
+
+  button {
+    width: 100%; /* optional: full width button */
+  }
+}

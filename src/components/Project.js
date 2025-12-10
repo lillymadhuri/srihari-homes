@@ -56,10 +56,10 @@ function Project() {
               alt={project.title}
             />
 
-            <h2 className="project-title">{project.title}</h2>
-            <p className="project-location">{project.location}</p>
+            <h2 className="project-title1">{project.title}</h2>
+            <p className="project-location1">{project.location}</p>
 
-            <span className={`project-status ${project.status.toLowerCase()}`}>
+            <span className={`project-status1 ${project.status.toLowerCase()}`}>
               {project.status}
             </span>
 

@@ -1,10 +1,6 @@
 import React from "react";
 import "./About.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import sri22 from "../images/sri22.jpeg";
-import sri21 from "../images/sri21.jpeg";
-import sri20 from "../images/sri20.jpeg";
-import sri19 from "../images/sri19.jpeg";
 function About(){
 return (
     <>
@@ -120,54 +116,6 @@ return (
     </div>
   </div>
 </div>
-<div className="about-blue-section">
-<h2 className="about-heading">WHY CHOOSE US</h2>
-<p>Ready to Build Your Dream Home? Contact us today to share your vision<br/>
-and begin your journey to “Your Home,” the dream made real.</p>
-<div className="about-cards">
-       <div className="about-card1">
-         <h3 className="about-title1">Built on Trust and Transparency</h3>
-          <img src={sri19} className="about-img" alt="icon1" />
-          <p className="about-text1">
-            In the real estate business, trust is <br/>
-            paramount. We hold a strong <br/>
-            reputation for transparency, with <br/>
-            clear and comprehensive contracts. </p>
-        </div>
-           <div className="about-card2">
-             <h3 className="about-title2">Unmatched Quality</h3>
-          <img src={sri20} className="about-img" alt="icon2" />
-         <p className="about-text2">
-           Every Sri Hari home is built with<br/>
-            meticulous attention to detail and <br/>
-            high-quality materials, creating lasting value and meeting the<br/>
-             highest global standards.
-          </p>
-        </div>
-          <div className="about-card1">
-            <h3 className="about-title1">Tailored to Your Needs</h3>
-          <img src={sri21} className="about-img" alt="icon3" />
-          <p className="about-text1">
-           We understand that every family’s<br/>
-            needs are unique. We offer a wide<br/>
-             range of customizable options and <br/>
-             work closely with you to design a <br/>
-          </p>
-        </div>
-           <div className="about-card2">
-            <h3 className="about-title2">Lifelong Partnership</h3>
-          <img src={sri22} className="about-img" alt="icon4" />
-          <p className="about-text2">
-           Our dedication extends beyon2d<br/>
-            handover. We provide <br/>
-            comprehensive after-sales support,<br/>
-             always ready to answer your <br/>
-             questions and address concerns.
-          </p>
-        </div>
-        </div>
-        </div>
-
 
 
       </section>

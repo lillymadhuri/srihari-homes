@@ -16,19 +16,19 @@ function Home() {
   };
     return(
        <section className="home">
-        <div className="homecontainer">
-            <h1>YOUR KEY TO THE PERFECT <br/>
-             <span>HOME AWAITS <BiSolidHandRight className="icon" /></span>
-             </h1>
-              </div>
-              <div className="video-form-section">
+         <div className="video-form-section">
          <div className="home-video">
         <video autoPlay loop muted playsInline>
           <source src="/video/Home.mp4" type="video/mp4" />
            Your browser does not support the video tag.
         </video>
       </div>
-        <form onSubmit={handleSubmit} className="contactform">
+        <div className="homecontainer">
+            <h1>YOUR KEY TO THE PERFECT <br/>
+             <span>HOME AWAITS <BiSolidHandRight className="icon" /></span>
+             </h1>
+                  </div>
+             <form onSubmit={handleSubmit} className="contactform">
           
           <label>Name</label>
          <input type="text" name="user_name" placeholder="Name" required />
@@ -49,6 +49,7 @@ function Home() {
          <div className="our">
          <button type="submit" className="orr">< FaMapPin className="icon1"/>Our Project Near To ORR</button>
          </div>
+         <div>
           <div className="logo1">
          <img src={sri2} alt="Logo1" className="logo1img" />
          <div className="overlay-box">
@@ -56,6 +57,7 @@ function Home() {
          <h3>Villa at ORR Hyderabad Area?</h3>
           <p>Premium location • High ROI • Modern Amenities</p>
         <button className="know-more-btn">Know More</button>
+        </div>
      </div>
        </div>
        <div className="project-section">
@@ -178,5 +180,4 @@ function Home() {
     )
 }
 export default Home;
-
 
